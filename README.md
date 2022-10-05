@@ -42,3 +42,20 @@ Is a token a cookie?
 
 What is a header in the post request? Why do you need it?
 - There are headers for the different api calls used in the backend endpoint code
+
+Why do we use window instead of history for the logout redirect?
+- App is not connected to a Router, so history is not accessible to the App component
+   - it contains a Router
+      - anything in the Router has access to history
+
+Do companies usually have newly hired devs working on this stuff or would it take a bit of time before being handed these responsibilities?
+- 
+
+Are there alternatives to axios to access an api or is it the standard?
+- Yes there are other alternatives such as:
+- Fetch is free, no importing 
+   - it is a little more complex, but works very similarly to axios
+
+Why did you use window.location.href instead of window.location.pathname?
+- You can use either
+- window.location.href don't need the entire url b/c the browser can tell what the base url is, but if you don't know, enter it completely just in case

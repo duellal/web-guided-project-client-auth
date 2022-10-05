@@ -9,7 +9,7 @@ import GasPrices from './components/GasPrices';
 function App() {
   const logout = () => {
     axiosWithAuth()
-      .post('http://localhost:5001/api/logout')
+      .post('/logout')
       .then(res => {
         localStorage.removeItem('token')
         window.location.href = './login'

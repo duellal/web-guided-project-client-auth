@@ -4,8 +4,8 @@ import axios from 'axios';
 class Login extends React.Component {
   state = {
     credentials: {
-      username: '',
-      password: ''
+      username: 'bloom',
+      password: 'tech'
     }
   };
 
@@ -20,6 +20,20 @@ class Login extends React.Component {
 
   login = e => {
     e.preventDefault();
+    //Make an axios call on the localhost:5001/api/login
+    //Pass in the user/pass
+    //Console.log the token that is returned
+    //console.log the error if returned
+    axios
+      .post('http://localhost:5001/api/login', this.state.credentials)
+      .then(res => {
+        localStorage.setItem('token', res.data.token)
+        //Redirect user to protected page:
+        this.props.history.push('/protected')
+      })
+      .catch(err => {
+        console.log(err)
+      })
   };
 
   render() {

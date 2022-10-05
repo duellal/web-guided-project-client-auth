@@ -39,3 +39,6 @@ Logout:     User deletes local token   ---->    Server deletes token
 # Q+A
 Is a token a cookie?
 - A cookie is what you put the token in to - it's a placeholder for the token data
+
+What is a header in the post request? Why do you need it?
+- There are headers for the different api calls used in the backend endpoint code

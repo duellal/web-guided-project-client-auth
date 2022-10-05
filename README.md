@@ -49,7 +49,8 @@ Why do we use window instead of history for the logout redirect?
       - anything in the Router has access to history
 
 Do companies usually have newly hired devs working on this stuff or would it take a bit of time before being handed these responsibilities?
-- 
+- You don't necessarily need to know how to do them in and out, but understand them
+- It helps knowing about it + makes the job easier
 
 Are there alternatives to axios to access an api or is it the standard?
 - Yes there are other alternatives such as:

@@ -31,7 +31,7 @@ function App() {
             <Link onClick={logout}>Logout</Link>
           </li>
           <li>
-            {/* Makes the protected page link "invisible" until the user logs in - right now it needs to be refreshed, but there should be a rerender when login happens in order for it to show w/o refreshing */}
+            {/* Below makes the protected page link "invisible" until the user logs in - right now it needs to be refreshed, but there should be a rerender when login happens in order for it to show w/o refreshing */}
             {localStorage.getItem('token') && <Link to="/protected">Protected Page</Link>}
           </li>
         </ul>

@@ -12,6 +12,7 @@ function App() {
       .post('http://localhost:5001/api/logout')
       .then(res => {
         localStorage.removeItem('token')
+        window.location.href = './login'
       })
       .catch(err => {
         console.log(err)})
